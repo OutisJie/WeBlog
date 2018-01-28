@@ -1,0 +1,9 @@
+<div *ngIf="blogger">
+  <h2>{{ blogger.name | uppercase }} Details</h2>
+  <div>
+    <label>id: </label>{{blogger.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="blogger.name" placeholder="name">
+  </div>
+</div>
